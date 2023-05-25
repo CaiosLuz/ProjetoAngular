@@ -1,27 +1,49 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-toolbar {
+  --background: #154B52 !important;
+  color: whitesmoke;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.calendario {
+  &__foto {
+    margin-top: 15px;
+    border-style: solid;
+    border-color: #000B0D;
+    border-width: 5px;
+    border-radius: 5px;
+  }
+  
+  &__mes {
+    margin-top: 20px;
+    font-size: 2rem; // rem serve para ficar tanto % acima da fonte do desktop ou mobile
+    color: #004C50;
+    text-decoration: dashed;
+    font-family: aton;
+    font-weight: bold
+  }
+
+  &__ano {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #004C50;
+    font-family: aton;
+    font-weight: bold
+  }
+
+  &__dia-semana {
+    color: whitesmoke;
+    font-weight: bold
+
+  }
+
+  &__dia {
+    color: black;
+    font-weight: bold
+  }
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+#borda-dia {
+  border-style: solid;
+  border-color: black;
+  margin-bottom: 25px;
+  background-color: #154B52;
 }
