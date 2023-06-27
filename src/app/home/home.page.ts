@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 
@@ -6,8 +7,42 @@ import { IonicModule } from '@ionic/angular';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonicModule],
+  imports: [IonicModule, CommonModule],
 })
 export class HomePage {
-  constructor() {}
+
+  // Funções 
+
+  limpar () {
+  }
+
+  maisMenos () {
+
+  }
+
+  dividir () {
+
+  }
+
+  multiplicacao () {
+
+  }
+
+  subtracao () {
+
+  }
+
+  adicao () {
+    
+  }
+
+  resultado: number = 0;
+
+  exibir(numero: number) {
+		// usamos this para acessar a variável que foi criada acima
+		this.resultado = numero * numero;
+
+		Number(this.resultado)
+	}
+
 }

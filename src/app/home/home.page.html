@@ -1,22 +1,30 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+  <ion-col>
+    <ion-row>
+      <ion-button (click)="limpar()">C</ion-button>
+      <ion-button (click)="maisMenos()">+/-</ion-button>
+      <ion-button (click)="multiplicar()"> -- </ion-button>
+      <ion-button (click)="dividir()">/</ion-button>
+    </ion-row>
+    <ion-row>
+      <ion-button (click)="exibir(7)">7</ion-button>
+      <ion-button (click)="exibir(8)">8</ion-button>
+      <ion-button (click)="exibir(7)">9</ion-button>
+      <ion-button (click)="multiplicacao()">*</ion-button>
+    </ion-row>
+    <ion-row>
+      <ion-button (click)="exibir(4)">4</ion-button>
+      <ion-button (click)="exibir(5)">5</ion-button>
+      <ion-button (click)="exibir(6)">6</ion-button>
+      <ion-button (click)="subtracao()">-</ion-button>
+    </ion-row>
+    <ion-row>
+      <ion-button (click)="exibir(1)">1</ion-button>
+      <ion-button (click)="exibir(2)">2</ion-button>
+      <ion-button (click)="exibir(3)">3</ion-button>
+      <ion-button (click)="adicao()">+</ion-button>
+    </ion-row>
+  </ion-col>
 
-  <div id="container">
-    <h3>Projeto com Bootstrap e Ionic!</h3>
-    <hr>
-    <p>Componentes Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components"> - UI Components</a></p>
-    <p>Componentes Bootstrap <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/docs/5.3/components/buttons/"> - UI Components</a></p>
-  </div>
 </ion-content>
